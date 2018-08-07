@@ -8,15 +8,17 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "lint": "standard",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --no-cache --env=jsdom",
-    "test:verbose": "react-scripts test --verbose --coverage --env=jsdom",
+    "test": "standard && react-scripts test --no-cache --env=jsdom",
+    "test:verbose": "standard && react-scripts test --verbose --coverage --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest-enzyme": "^6.0.2"
+    "jest-enzyme": "^6.0.2",
+    "standard": "^11.0.1"
   }
 }
