@@ -11,7 +11,7 @@
     "lint": "standard",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "standard && react-scripts test --no-cache --env=jsdom",
+    "test": "standard && react-scripts test --env=jsdom",
     "test:verbose": "standard && react-scripts test --verbose --coverage --env=jsdom",
     "eject": "react-scripts eject"
   },
