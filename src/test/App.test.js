@@ -3,6 +3,7 @@ import React from 'react'
 import {configure, shallow} from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import App from '../App'
+import Foo from '../Foo'
 
 configure({ adapter: new Adapter() })
 
@@ -18,5 +19,9 @@ describe('<App />', () => {
 
   it('contains a `getting started` paragraph', () => {
     expect(app.find('p.App-intro').text()).toContain('To get started,')
+  })
+
+  it('wraps 2 Foo components', () => {
+    expect(app.find(Foo)).toHaveLength(2)
   })
 })
