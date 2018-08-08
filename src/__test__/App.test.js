@@ -18,7 +18,7 @@ describe('<App />', () => {
   })
 
   it('contains a `getting started` paragraph', () => {
-    expect(app.find('p.App-intro').text()).toContain('To get started,')
+    expect(app.find('p').text()).toContain('To get started,')
   })
 
   it('wraps 2 Foo components', () => {
